@@ -1,2 +1,4 @@
 Test of Repka #3
 Middle 4 DATA
+car = 'qwerty'
+car.isal
