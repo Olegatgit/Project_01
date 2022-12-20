@@ -10,7 +10,7 @@ radius = 42
 #       пи возьмите равным 3.1415926
 #       точность указывается в функции round()
 #
-circle_square = round (3.1415926 * radius ** 2, 4)
+circle_square = round(3.1415926 * radius ** 2, 4)
 print('Площадь круга = ', circle_square)
 
 # Далее, пусть есть координаты точки

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Есть список песен группы Depeche Mode со временем звучания с точносттю до долей минут
+from pprint import pprint
 
 violator_songs_list = [
     ['World in My Eyes', 4.86],
@@ -19,8 +20,9 @@ violator_songs_list = [
 #   Три песни звучат ХХХ минут
 # Обратите внимание, что делать много вычислений внутри print() - плохой стиль.
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
+print('Halo', violator_songs_list[3][1])
 
-# TODO здесь ваш код
+total_time = violator_songs_list[3][1]
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
@@ -34,6 +36,12 @@ violator_songs_dict = {
     'Blue Dress': 4.18,
     'Clean': 5.68,
 }
+my_dict = {x: x**2 for x in range(10)}
+pprint(my_dict)
+pprint(list(my_dict))
+
+total_time_2 = round(violator_songs_dict['Sweetest Perfection'] + violator_songs_dict['Policy of Truth'], 2)
+print('Toyal time =', total_time_2)
 
 # распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
 #   А другие три песни звучат ХХХ минут
