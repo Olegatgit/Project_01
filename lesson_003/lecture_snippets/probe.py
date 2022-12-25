@@ -1,13 +1,19 @@
-f1, f2, count = 0, 1, 0
-while f2 < 1000000:
-    count += 1
-    if count > 27:
-        print('Итераций больше чем 27. Прерываюсь.')
-        break
-    f1, f2 = f2, f1 + f2
-    if f2 < 0:
-        continue
-    print(f2)
-else:
-    print('Было', count, 'итераций')
+def elephant_to_free(some_list):
+    elephant_found = 'elephant' in some_list
+    if elephant_found:
+        some_list.remove('elephant')
+        print('Слон на свободе!!!')
+    return elephant_found
+
+
+zoo = ['lion', 'elephant', 'monkey', 'skunk', 'horse', 'elephant']
+
+elephant_to_free(tuple(zoo))
+print(zoo)
+
+elephant_to_free(zoo)
+print(zoo)
+
+elephant_to_free(zoo)
+print(zoo)
 

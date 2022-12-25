@@ -30,6 +30,27 @@ store = {
     ],
 }
 
+# print(store[goods['Лампа']][0]['price'])
+# print(len(store[goods['Стул']]))
+# print(len(goods))
+
+for i in range(0, len(goods)):
+# i = 3
+    # print(list(goods)[i], goods[list(goods)[i]])
+    # print(goods[list(goods)[i]])
+    # print(len(store[goods[list(goods)[i]]]))
+    item_number = 0
+    item_cost = 0
+    for j in range(0, len(store[goods[list(goods)[i]]])):
+        # for j in range(0, 2):
+        # j = 0
+        # print(len(store[goods[list(goods)[i]]]))
+        print(store[goods[list(goods)[i]]][j]['quantity'], store[goods[list(goods)[i]]][j]['price'])
+        item_cost += store[goods[list(goods)[i]]][j]['quantity'] * store[goods[list(goods)[i]]][j]['price']
+        item_number += store[goods[list(goods)[i]]][j]['quantity']
+
+    print(list(goods)[i], ' - ', item_number, 'шт., стоимость ', item_cost, ' руб.')
+
 # Рассчитать на какую сумму лежит каждого товара на складе.
 #
 # Вывести суммарную стоимость каждого товара на складе c помощью циклов
