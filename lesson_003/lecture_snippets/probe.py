@@ -57,6 +57,6 @@ for i in range(7):
     # sd.line(start_point=s_point, end_point=e_point, color=rainbow_colors[i], width=line_width)
     # time.sleep(.2)
 
-
+#1234
 sd.pause()
 #123445 12345
