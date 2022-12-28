@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # 12345
+
+#987
+
 import random
 
 import simple_draw as sd
