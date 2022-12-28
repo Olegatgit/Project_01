@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # 12345
-
+#678
 #987
 
 import random
